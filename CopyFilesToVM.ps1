@@ -1,12 +1,13 @@
 ﻿$params = @{
     VMName = "GPUP"
-    SourcePath = "C:\Users\james\Downloads\Win11_English_x64.iso"
+    SourcePath = "C:\Users\dogOnPc\Downloads\win11.iso"
+    InstallPath = "F:\vms\disks"
     Edition    = 6
     VhdFormat  = "VHDX"
     DiskLayout = "UEFI"
-    SizeBytes  = 40GB
+    SizeBytes  = 128GB
     MemoryAmount = 8GB
-    CPUCores = 4
+    CPUCores = 8
     UnattendPath = "$PSScriptRoot"+"\autounattend.xml"
     GPUName = "AUTO"
     GPUResourceAllocationPercentage = 50
@@ -4237,7 +4238,7 @@ param(
 [int64]$SizeBytes,
 [int]$Edition,
 [string]$VhdFormat,
-[string]$VhdPath = "C:\Users\Public\Documents\Hyper-V\Virtual Hard Disks\$($VMName).vhdx",
+[string]$VhdPath = "$($params.InstallPath)\$($VMName).vhdx",
 [string]$VMName,
 [string]$DiskLayout,
 [string]$UnattendPath,
