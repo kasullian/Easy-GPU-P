@@ -14,7 +14,7 @@
     Team_ID = ""
     Key = ""
     Username = "GPUVM"
-    Password = "CoolestPassword!"
+    Password = "password"
     Autologon = "true"
 }
 
