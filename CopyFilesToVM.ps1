@@ -1,5 +1,5 @@
 ﻿$params = @{
-    VMName = "GPUP"
+    VMName = "Nvidier"
     SourcePath = "C:\Users\dogOnPc\Downloads\win11.iso"
     InstallPath = "F:\vms\disks"
     Edition    = 6
@@ -13,7 +13,7 @@
     GPUResourceAllocationPercentage = 50
     Team_ID = ""
     Key = ""
-    Username = "GPUVM"
+    Username = "NvidierOnline"
     Password = "password"
     Autologon = "true"
 }

@@ -54,7 +54,7 @@ if (!(Test-Path HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Unin
     $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator) | Out-File C:\ProgramData\Easy-GPU-P\admim.txt
     Start-Process "C:\Users\$env:USERNAME\Downloads\parsec-windows.exe" -ArgumentList "/silent", "/shared","/team_id=$team_id","/team_computer_key=$key" -wait
     $configfile = Get-Content C:\ProgramData\Parsec\config.txt
-    $configfile += "encoder_fps = 120"
+    $configfile += "encoder_fps = 144"
     $configfile += "encoder_bitrate = 150"
     $configfile += "encoder_min_qp = 64"
     $configfile += "host_virtual_monitors = 1"
